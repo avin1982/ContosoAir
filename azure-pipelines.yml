@@ -10,7 +10,7 @@ trigger:
 steps:
   - task: Npm@1
     inputs:
-      command: 'npm install require-yml'
+      command: 'install'
   - script: 'npm test'
     displayName: 'Run unit tests'
     continueOnError: true
