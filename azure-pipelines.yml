@@ -10,8 +10,10 @@ trigger:
 steps:
   - task: Npm@1
     inputs:
-      command: 'install'
-  - script: 'npm test'
+      command: install
+  - script: 
+      'npm install'
+      'npm test'
     displayName: 'Run unit tests'
     continueOnError: true
   - task: PublishTestResults@2
